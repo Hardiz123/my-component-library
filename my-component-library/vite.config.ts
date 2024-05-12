@@ -12,7 +12,7 @@ export default defineConfig({
   build: {
     // sourcemap: true,
     lib: {
-      entry: resolve(__dirname, "lib/main.ts"),
+      entry: resolve(__dirname, "lib/index.ts"),
       formats: ["es"],
     },
     copyPublicDir: false,
@@ -33,7 +33,6 @@ export default defineConfig({
         entryFileNames: '[name].js',
         globals: {
           react: "React",
-          tailwindcss: "tailwindcss"
         },
       }
     },
@@ -44,21 +43,3 @@ export default defineConfig({
     },
   }
 });
-
-
-
-// export default defineConfig({
-//   plugins: [react(), dts({ include: ["lib"], insertTypesEntry: true }), libInjectCss()],
-//   build: {
-//     copyPublicDir: false,
-//     lib: {
-//       entry: resolve(__dirname, "lib/main.ts"),
-//       name: "UI KIT",
-//       formats: ["es"],
-//       fileName: "ui-kit",
-//     },
-//     rollupOptions: {
-//       external: ["react", "react-dom", "react/jsx-runtime", "tailwindcss"],
-//     },
-//   },
-// });

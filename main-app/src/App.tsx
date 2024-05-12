@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import { Button, Input, Label } from "my-component-library"
+
+import {Input, Label, Button} from "hardiz-demo-library";
+
 function App() {
   const [value, setValue] = useState<string>("");
 
