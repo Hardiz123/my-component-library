@@ -14,5 +14,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-    
-}
+    args: {
+        value: '',
+        onChange: (e) => console.log(e.target.value),
+        placeholder:'placeHolder'
+    },
+};

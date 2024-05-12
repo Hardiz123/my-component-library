@@ -4,4 +4,5 @@ export type ButtonProps = {
   variant?: "primary" | "secondary" | "tertiary";
   className?: string;
   label : string;
+  isLoading?: boolean;
 };

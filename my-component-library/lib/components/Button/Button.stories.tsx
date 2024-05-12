@@ -7,7 +7,8 @@ const meta = {
 	tags: ['autodocs'],
     args: {
         disabled: false,
-        label: 'Click me here',
+        label: 'Click me',
+        isLoading: false,
     },
 } satisfies Meta<typeof Button>;
 
@@ -17,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     args: {
         variant: 'primary',
-        label: 'Click You',
+        label: 'Click Me',
         disabled: false,
     },
 }
@@ -25,6 +26,14 @@ export const Primary: Story = {
 export const Secondary: Story = {
     args: {
         variant: 'secondary',
+        label: 'Click Me',
+        disabled: false,
+    },
+}
+
+export const Tertiary: Story = {
+    args: {
+        variant: 'tertiary',
         label: 'Click Me',
         disabled: false,
     },
